@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import PySimpleGUI as sg
-import os
 
 
 
