@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import altair as alt
 
 
 def DownSampleRate():
@@ -19,6 +20,10 @@ def StreamLitGUI():
 
     stdf = pd.DataFrame(data, columns=[X, Y])
     st.line_chart(stdf)
+
+    if X != Y:
+        c = alt.Chart(stdf).mark_circle(size=60).encode(x=X, y=Y).interactive()
+        st.altair_chart(c, use_container_width=True)
 
 
 
@@ -54,8 +59,5 @@ if __name__ == "__main__":
     main()
 
 
-"""
-    if X != Y:
-        c = alt.Chart(stdf).mark_circle(size=60).encode(x=X, y=Y).interactive()
-        st.altair_chart(c, use_container_width=True)
-"""
+
+
