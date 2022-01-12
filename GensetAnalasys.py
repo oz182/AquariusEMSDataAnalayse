@@ -29,8 +29,6 @@ def CSVfileAnalyser(fp):
     df = pd.DataFrame(data)
     HaedersList = list(df.columns.values)
 
-    st.write(df)
-
 
 def FirstLayout():
     global FileNameIN
@@ -45,8 +43,9 @@ def FirstLayout():
 
 def main():
     FirstLayout()
-    CSVfileAnalyser(FileNameIN)
-    StreamLitGUI()
+    if FileNameIN != None:
+        CSVfileAnalyser(FileNameIN)
+        StreamLitGUI()
 
 
 
