@@ -28,29 +28,29 @@ def StreamLitGUI():
             c = alt.Chart(stdf).mark_circle(size=60).encode(x=X, y=Y).interactive()
             st.altair_chart(c, use_container_width=True)
 
-            """
-            plt.ion()
-            fig = plt.figure()
+            #"""
+            #plt.ion()
+            #fig = plt.figure()
 
-            ax1 = fig.add_subplot(111)
-            ax1.plot(df['Time'], df[X])
-            ax1.set_ylabel('fffff')
-            ax1.set_title('title')
+            #ax1 = fig.add_subplot(111)
+            #ax1.plot(df['Time'], df[X])
+            #ax1.set_ylabel('fffff')
+            #ax1.set_title('title')
 
-            ax2 = ax1.twinx()
-            ax2.plot(df['Time'], df[Y], 'r')
-            ax2.set_ylabel('dfs')
-            ax2.set_xlabel('dfsd')
+            #ax2 = ax1.twinx()
+            #ax2.plot(df['Time'], df[Y], 'r')
+            #ax2.set_ylabel('dfs')
+            #ax2.set_xlabel('dfsd')
 
-            st.pyplot(plt)
-            """
+            #st.pyplot(plt)
+            #"""
 
-            """
-            a = alt.Chart(stdf).mark_line().encode(x='time',y=Y)
-            b = alt.Chart(stdf).mark_line().encode(x='time',y=X)
-            c = alt.layer(a, b).interactive()
-            st.altair_chart(c, use_container_width=True)
-            """
+            #"""
+            #a = alt.Chart(stdf).mark_line().encode(x='time',y=Y)
+            #b = alt.Chart(stdf).mark_line().encode(x='time',y=X)
+            #c = alt.layer(a, b).interactive()
+            #st.altair_chart(c, use_container_width=True)
+           # """
 
             #base = alt.Chart(stdf).encode(alt.X(X, axis=alt.Axis(title=None)))
             #Line1 = base.mark_line(stroke='#5276A7', interpolate='monotone').encode(alt.Y(X), axis=alt.Axis(title='kjhkjh'), titleColor='#5276A7')
