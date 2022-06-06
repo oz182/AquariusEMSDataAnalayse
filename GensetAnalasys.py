@@ -19,13 +19,13 @@ def StreamLitGUI():
         Y = right_column.selectbox(' ', HaedersList)
         right_column.line_chart(data=df[Y])
 
-        #if X != Y:
-        st.write("""# **The selected graphes combined** """)
+        if X != Y:
+            st.write("""# **The selected graphes combined** """)
 
-        stdf = pd.DataFrame(data, columns=[X, Y])
-        st.line_chart(stdf)
-        c = alt.Chart(stdf).mark_circle(size=60).encode(x=X, y=Y).interactive()
-        st.altair_chart(c, use_container_width=True)
+            stdf = pd.DataFrame(data, columns=[X, Y])
+            st.line_chart(stdf)
+            c = alt.Chart(stdf).mark_circle(size=60).encode(x=X, y=Y).interactive()
+            st.altair_chart(c, use_container_width=True)
 
             #"""
             #plt.ion()
