@@ -26,6 +26,8 @@ def StreamLitGUI():
             st.line_chart(stdf)
             c = alt.Chart(stdf).mark_circle(size=60).encode(x=X, y=Y).interactive()
             st.altair_chart(c, use_container_width=True)
+            
+            st.write('Made by *Oz E.*)
 
             #"""
             #plt.ion()
