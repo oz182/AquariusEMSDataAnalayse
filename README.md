@@ -8,5 +8,11 @@ The application was built using two main python modules:
 * StreamLit - Streamlit is an open source app framework in Python language. It helps us create web apps for data science and machine learning in a short time. It is compatible with major Python libraries such as scikit-learn, Keras, PyTorch, SymPy(latex), NumPy, pandas, Matplotlib etc.
 * PANDAS - Pandas is an open source Python package that is most widely used for data science/data analysis and machine learning tasks
 
+# Using the app
 Link for the app: https://oz182-aquariusemsdataanalayse-gensetanalasys-qiz05m.streamlit.app/
+From the main page you can upload the CSV file (One file, or two files if you want to compere between datasets)
+
+![WhatsApp Image 2023-02-09 at 19 23 03](https://user-images.githubusercontent.com/91877982/217892570-e4ffc3bd-96e0-4f50-9698-5eb73ca01fe2.jpeg)
+
+
 
