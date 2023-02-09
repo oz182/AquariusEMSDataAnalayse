@@ -10,7 +10,9 @@ The application was built using two main python modules:
 
 # Using the app
 Link for the app: https://oz182-aquariusemsdataanalayse-gensetanalasys-qiz05m.streamlit.app/
-From the main page you can upload the CSV file (One file, or two files if you want to compere between datasets)
+
+From the main page you can upload the CSV file (One file, or two files if you want to compere between datasets).
+In this repo you can find an example CSV file ("FULL charge cycle_1_1.csv") - Try it!
 
 ![WhatsApp Image 2023-02-09 at 19 23 03](https://user-images.githubusercontent.com/91877982/217892570-e4ffc3bd-96e0-4f50-9698-5eb73ca01fe2.jpeg)
 
